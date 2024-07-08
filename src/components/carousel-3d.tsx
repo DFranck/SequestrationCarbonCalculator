@@ -32,8 +32,8 @@ const Carousel3D = ({ imgNum = 5, children, stopOnHover }: Carousel3DProps) => {
   }, []);
   return (
     <div
-      className="w-full h-screen  flex justify-center items-center overflow-hidden relative"
-      style={{ perspective: "1000px" }}
+      className="w-full h-screen  flex justify-center items-center overflow-hidden"
+      style={{ perspective: "1500px" }}
       role="region"
       aria-label="3D Image Carousel"
       tabIndex={0}
@@ -72,27 +72,27 @@ const Carousel3D = ({ imgNum = 5, children, stopOnHover }: Carousel3DProps) => {
         ))}
       </div>
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2  flex flex-wrap justify-between items-center">
-        <div className="relative w-screen flex flex-col justify-end px-8 h-fit self-end lg:items-end">
-          <h1 className="absolute font-icaRubrik text-8xl xl:text-[16em] lg:text-[12em] lg:left-1/2  bottom-20 lg:-translate-x-1/2 leading-[1em] text-primary z-0 font-bold mb-8 ">
+        <div className="relative w-screen flex flex-col justify-end px-8 h-fit self-end items-end">
+          <h1 className="absolute font-icaRubrik text-8xl xl:text-[16em] lg:text-[12em] lg:left-1/2 left-5 bottom-20 lg:bottom-0 lg:-translate-x-1/2 leading-[1em] mb-0 text-primary z-0 font-bold ">
             EzStart
           </h1>
           <span
             id="carousel-3d-h1"
-            className="absolute font-icaRubrik text-8xl lg:text-[12em] xl:text-[16em] lg:left-1/2 bottom-20 lg:-translate-x-1/2 leading-[1em] text-transparent z-20 font-bold mb-8 "
+            className="absolute font-icaRubrik text-8xl lg:text-[12em] xl:text-[16em] lg:left-1/2 bottom-20 left-5 lg:bottom-0 lg:-translate-x-1/2 leading-[1em] text-transparent z-20 font-bold "
           >
             EzStart
           </span>
-          <div className="font-poppins max-w-[200px] lg:mr-40">
-            <h2 className="text-[3em]">PMF WebDev</h2>
+          <div className="font-poppins max-w-[200px] md:mb-10">
+            <h2 className="text-[3em]">ASC</h2>
             <p>
-              <b>FrontEnd Developer</b>
+              <b>Consultante développement </b>
             </p>
           </div>
         </div>
         <Image
           src={bgImg}
           alt="Background Image"
-          className=" absolute bottom-0 right-0  z-10"
+          className=" absolute bottom-0 right-0 lg:right-20  z-10"
           width={500}
         />
       </div>

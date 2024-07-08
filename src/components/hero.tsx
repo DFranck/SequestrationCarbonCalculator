@@ -20,7 +20,7 @@ const Hero = () => {
           <Button asChild className="mb-6 text-lg px-8 py-6 font-bold">
             <Link href={`/${locale}/docs/getstarted`}>{t("cta")}</Link>
           </Button>
-          <Button
+          {/* <Button
             asChild
             className="mb-6 text-lg px-8 py-6 font-bold"
             variant={"outline"}
@@ -47,7 +47,7 @@ const Hero = () => {
               </div>{" "}
               {t("github")}
             </Link>
-          </Button>
+          </Button> */}
         </div>
       </Section>
     </AuroraBackground>
