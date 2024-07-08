@@ -3,7 +3,7 @@ import ImagePlaceholderSvg from "@/components/svgs/image-placeholder-svg";
 import Image from "next/image";
 import PropTypes from "prop-types";
 import React, { ReactElement, ReactNode, useEffect, useRef } from "react";
-import bgImg from "../../public/assets/imgs/devnobg.png";
+import bgImg from "../../public/assets/imgs/hero-img.webp";
 
 type Carousel3DProps = {
   imgNum?: number;
@@ -92,8 +92,8 @@ const Carousel3D = ({ imgNum = 5, children, stopOnHover }: Carousel3DProps) => {
         <Image
           src={bgImg}
           alt="Background Image"
-          className=" absolute bottom-0 right-0 lg:left-[50%] lg:-translate-x-1/2 z-10"
-          width={200}
+          className=" absolute bottom-0 right-0  z-10"
+          width={500}
         />
       </div>
     </div>
